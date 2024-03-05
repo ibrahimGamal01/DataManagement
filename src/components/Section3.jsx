@@ -2,15 +2,10 @@ import DataSc from '../assets/DataSc'
 
 export default function Section3() {
   return (
-    <section className='bg-white dark:bg-black'>
+    <section className=''>
       <div className='grid max-w-screen-xl px-4 py-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
         {/* Image Section */}
         <div className='lg:hidden mb-8 lg:mb-0 lg:col-span-12 flex justify-center'>
-          {/* <img
-            src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png'
-            alt='mockup'
-            className='max-w-full'
-          /> */}
           <DataSc className='w-full h-full object-cover' />
         </div>
 
@@ -22,26 +17,9 @@ export default function Section3() {
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 
           <p className='max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400'>
-            We provide a wide range of tools and services to help you manage your data. We offer a variety of tools and services to help you manage your data, including data management, data analysis, data visualization, and data integration. Our software is designed to help you manage your data in a way that is efficient and effective.
+            We offer a variety of tools and services to help you manage your data, including data management, data analysis, data visualization, and data integration.
           </p>
-          {/* <a
-            href='#'
-            className='inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 transition ease-in-out delay-150 bg-gradient-to-br from-blue-900 to-blue-500 hover:-translate-y-1 hover:scale-10 hover:from-indigo-900 hover:to-indigo-600 duration-300'
-          >
-            Get started
-            <svg
-              className='w-5 h-5 ml-2 -mr-1'
-              fill='currentColor'
-              viewBox='0 0 20 20'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path
-                fillRule='evenodd'
-                d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
-                clipRule='evenodd'
-              ></path>
-            </svg>
-          </a> */}
+        
           <div className='mr-2 inline-flex items-center justify-center gap-x-6 '>
             <a
               href='#'
@@ -72,7 +50,7 @@ export default function Section3() {
           </div>
           <a
             href='#'
-            className='inline-flex items-center justify-center px-8 py-6 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'
+            className='inline-flex my-4 items-center justify-center px-8 py-6 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'
           >
             Speak to Sales
           </a>
@@ -81,11 +59,6 @@ export default function Section3() {
 
         {/* Image Section (Visible on Large Screens) */}
         <div className='hidden lg:block lg:col-span-5 lg:flex justify-center'>
-          {/* <img
-            src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png'
-            alt='mockup'
-            className='max-w-full'
-          /> */}
           <DataSc className='w-full h-full object-cover' />
         </div>
       </div>

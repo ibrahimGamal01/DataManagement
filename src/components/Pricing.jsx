@@ -14,7 +14,7 @@ export default function Pricing() {
     //     threshold: 0.1, // Percentage of the element that is in view before the callback triggers
     //   });
   return (
-    <div className="bg-black py-10 sm:py-10">
+    <div className="py-10 sm:py-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="font-bold tracking-tight text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">Simple no-tricks pricing</h2>

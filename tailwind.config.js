@@ -31,6 +31,8 @@ export const theme = {
   },
   fontFamily: {
     body: [
+      "Lexend Deca",
+      "Lexend Zett",
       "Inter",
       "ui-sans-serif",
       "system-ui",

@@ -30,12 +30,12 @@ export default function Hero() {
                     style={{ background: "rgba(0,0,0,0.5)" }}
                 >
                     <div className='text-center'>
-                        <MasterClass title = "TechTaleForge" />
+                        <MasterClass title = "TechTaleForge" color="white" width="400px"/>
 
                         <h1 className='text-white font-extrabold text-5xl xs:text-5xl md:text-6xl mt-7'>
                             <span className='text-white'>Right</span> Place To
                         </h1>
-                        <p className='text-gray-200 text-2xl xs:text-2xl md:text-2xl leading-tight mt-6'>
+                        <p className='text-gray-200 text-xl xs:text-2xl md:text-2xl leading-tight mt-6'>
                         <span className='text-white'>Right</span> Place To Forge the <span className='text-white'>Past</span> into the{" "}
                             <span className='text-white'>Future</span>
                         </p>

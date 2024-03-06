@@ -1,6 +1,6 @@
 // import { useInView } from 'react-intersection-observer';
 // import { useEffect, useState } from "react";
-
+import MasterClass from "./MasterClass"
 const includedFeatures = [
   'Private forum access',
   'Member resources',
@@ -9,26 +9,26 @@ const includedFeatures = [
 ]
 
 export default function Pricing() {
-    // const { ref, inView } = useInView({
-    //     triggerOnce: true, // Change this to false if you want the animation to trigger again whenever it comes in view
-    //     threshold: 0.1, // Percentage of the element that is in view before the callback triggers
-    //   });
+  // const { ref, inView } = useInView({
+  //     triggerOnce: true, // Change this to false if you want the animation to trigger again whenever it comes in view
+  //     threshold: 0.1, // Percentage of the element that is in view before the callback triggers
+  //   });
   return (
-    <div className="py-10 sm:py-10">
+    <div className="py-10 sm:py-10 Lexend Deca">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="font-bold tracking-tight text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">Simple no-tricks pricing</h2>
+        <div className="mx-auto max-w-2xl sm:text-center mb-0">
+          <MasterClass title='PRICING' color="gray"/>
+          <h1 className="font-bold tracking-tight text-5xl md:text-5xl leading-normal md:leading-relaxed mb-2 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">Purchase for life
+          </h1>
           <p className="text-lg leading-8 text-gray-400">
-            Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas
-            in. Explicabo id ut laborum.
+            Keep the legacy alive, No worries about the data ever being lost. This is a one time purchase and you are good to go.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
           <div className="p-8 sm:p-10 lg:flex-auto">
-            <h3 className="text-3xl font-bold tracking-tight text-gray-100">Yearly  Membership</h3>
+            <h3 className="text-3xl font-bold tracking-tight text-gray-100">Life  Membership</h3>
             <p className="mt-6 text-base leading-7 text-gray-400">
-              Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis perferendis blanditiis
-              repellendus etur quidem assumenda.
+              We use multiple Servers Located all over the world to make sure that the site is always up and running.
             </p>
             <div className="mt-10 flex items-center gap-x-4">
               <h4 className="flex-none text-sm font-semibold leading-6 text-indigo-500">What’s included</h4>
@@ -49,14 +49,14 @@ export default function Pricing() {
           <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
             <div className="rounded-2xl py-10 text-center ring-1 ring-inset ring-white lg:flex lg:flex-col lg:justify-center lg:py-16"
               style={{
-                background: "radial-gradient(46.800000000000004% 20% at 50% 100%,#0442F8 0%,rgba(5,41,118,.7) 100%)",
+                background: "radial-gradient(46.800000000000004% 20% at 50% 100%,#364c88 0%,rgba(12, 30, 69, 0.738) 100%)",
                 fontWeight: "bold",
                 fontSize: "1.1rem",
-            }}>
+              }}>
               <div className="mx-auto max-w-xs px-8">
                 <p className="text-base font-semibold text-gray-50">Pay once, Forget about it</p>
                 <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                  <span className="text-5xl font-bold tracking-tight text-white">$849</span>
+                  <span className="text-5xl font-bold tracking-tight text-white">$30,000</span>
                   <span className="text-sm font-semibold leading-6 tracking-wide text-gray-500">USD</span>
                 </p>
                 <a

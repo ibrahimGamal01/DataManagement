@@ -1,7 +1,7 @@
 const Rocket = (props) => (
     //main color #0442c8
   <svg
-    className="mx-auto -mt-36 md:-mt-36"
+    className="mx-auto -mt-36 md:-mt-36 "
     width={464}
     height={320}
     viewBox="0 0 464 320"

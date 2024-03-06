@@ -9,28 +9,37 @@ import MovementTransition from "./components/Transitions/MovementTransition";
 import Timeline from "./components/Timeline";
 import MasterClass from "./components/MasterClass";
 
-import styled, { createGlobalStyle } from "styled-components";
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    font-family: 'Lexend Zetta', sans-serif; /* Apply Lexend Zetta font */
-  }
-`;
 
 
 export default function App() {
   return (
     <div style={{ background: '#0f1114' }}>
-      <GlobalStyle />
       <Hero />
+      <div className="my-10 sm:my-25 md:mb-25">
+        <h1 className='max-w-2xl mt-10 sm:mt-20 mb-5 mx-auto text-2xl font-extrabold tracking-tight text-center text-blue-600 xl:text-4xl dark:text-black'>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-100">
+            Short on time?
+          </span>
+        </h1>
+        <p className="text-center text-lg text-gray-500 mb-8">Enter your email to schedule a 10-minute meeting to get it done.</p>
+        <div className="flex justify-center">
+          <input type="email" name="email" placeholder="Enter your email" className="w-full max-w-md px-4 py-2 leading-tight text-gray-700 bg-white border border-gray-300 rounded-md appearance-none focus:outline-none focus:border-blue-500" required />
+          <button type="submit" className="ml-2 px-4 py-2 text-white font-bold bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">Get it done</button>
+        </div>
+      </div>
+
+
+
+
       <RevealOnScroll>
         <Section />
       </RevealOnScroll>
 
 
+
       <Timeline />
 
-      <MasterClass title='TechTaleForge' className='' />
+      <MasterClass title='TechTaleForge' color="gray" />
       <h1 className='max-w-2xl my-5 m-auto text-4xl font-extrabold tracking-tight justify-center text-center text-blue-600 xl:text-6xl dark:text-black sm:flex sm:items-center'>
         <span className="bg-clip-text text-transparent text-center bg-gradient-to-r from-white to-gray-100">
           What to expect
@@ -38,45 +47,12 @@ export default function App() {
       </h1>
       <p className="justify-center text-center text-lg text-gray-500 mb-8">We have </p>
 
-      {/* <div className='w-full h-full flex justify-center items-center'>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-          <RevealOnScroll>
-            <Card
-              title='Immortal Insights'
-              description='Profound insights from the depths of history using our advanced search engines and cybersecurity expertise.'
-              imageSrc='https://img.freepik.com/free-vector/search-concept-illustration_114360-156.jpg?w=740&t=st=1708543268~exp=1708543868~hmac=67a35527b002e687df746c8cabb4577158d55559facb00199b3324e6fb232634'
-            />
-          </RevealOnScroll>
-          <RevealOnScroll>
-            <Card
-              title='Veracity Validation'
-              description='Ensure the authenticity and credibility of every narrative with our meticulous data investigation services.'
-              imageSrc='https://img.freepik.com/free-vector/code-review-concept-illustration_114360-3973.jpg?w=740&t=st=1708542815~exp=1708543415~hmac=81b333664e4ca974c646c9e26848aff231ae993bc0c1dc770b4ab748e82be460'
-            />
-          </RevealOnScroll>
-          <RevealOnScroll>
-            <Card
-              title='Narrative Navigation'
-              description='Embark on a journey of discovery with our expertly categorized data, making every story accessible and engaging.'
-              imageSrc='https://img.freepik.com/free-vector/data-points-concept-illustration_114360-2761.jpg?w=740&t=st=1708542940~exp=1708543540~hmac=570fb636af1e550b188d2117eb73eddfb55f659dbfb1df7ce6585c27b34614c0'
-            />
-          </RevealOnScroll>
-          <RevealOnScroll>
-            <Card
-              title='Digital Dominion'
-              // description='Dominate the digital realm with our comprehensive publishing and search engine optimization services, ensuring widespread availability and visibility.'
-              description='Publishing and search engine optimization services, ensuring widespread availability and visibility.'
-              imageSrc='https://img.freepik.com/free-vector/online-world-concept-illustration_114360-1092.jpg?w=740&t=st=1708543168~exp=1708543768~hmac=eecaf985b0e983c1724e1f8bd55eef7e12c36d07dc31a7e4faa93c6d7673b51d'
-            />
-          </RevealOnScroll>
-        </div>
-      </div> */}
-      <div className='max-w-screen-xl mx-auto px-4 md:py-4 py-10 sm:py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+      <div className='max-w-screen-xl mb-20 mx-auto px-4 md:py-4 py-10 sm:py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
         <MovementTransition>
           <Card
             title='Gather Information'
             description='Access public/private records, social media, and interview family and friends.'
-            imageSrc='https://img.freepik.com/free-photo/back-view-man-planning-hacker-attack-dark-room-man-writing-wall-with-stickers-photographs-red-threads-planning-conspiracy-hacking-concept_74855-24330.jpg?w=996&t=st=1709669948~exp=1709670548~hmac=0f31121683df5672efdffa49e032d39a07c76539ef3b33c84bbdb8856958f8f5'
+            imageSrc='https://i.postimg.cc/9Mb6QBNB/IMG-20240306-203117-361-transformed-jpeg.jpg'
             link='#'
           />
         </MovementTransition>
@@ -84,7 +60,7 @@ export default function App() {
           <Card
             title='Research Background'
             description='Explore mentality, beliefs, career, and significant life events.'
-            imageSrc='https://img.freepik.com/free-photo/truth-concept-composition-detective-desk_23-2149051321.jpg?w=996&t=st=1709670742~exp=1709671342~hmac=8b5a6f909c1057d14cf8e239f7940016a7e40d843856282cff797628ed561305'
+            imageSrc='https://as2.ftcdn.net/v2/jpg/02/82/73/97/1000_F_282739755_TI9j2FVXnxfFFAASqpU58HXE04vaZuAt.jpg'
             link='#'
           />
         </MovementTransition>
@@ -92,7 +68,7 @@ export default function App() {
           <Card
             title='Examine Relationships'
             description='Analyze family ties, friendships, and professional connections.'
-            imageSrc='https://img.freepik.com/free-photo/abstract-truth-concept-composition_23-2149051355.jpg?w=996&t=st=1709670746~exp=1709671346~hmac=62ffe32e1fe4ffd70e370a87a28bea0d6efd4b44a6e30b1893bebb82a089c4ac'
+            imageSrc='https://i.postimg.cc/Lsg1tHzy/t-Oqm-TBW4uiv-Fg-Gd-T9l-ZRS-transformed.jpg'
             link='#'
           />
         </MovementTransition>
@@ -100,7 +76,7 @@ export default function App() {
           <Card
             title='Investigate Lineage'
             description='Probe family history, relationships, and ancestral/progeny connections.'
-            imageSrc='https://img.freepik.com/free-vector/online-world-concept-illustration_114360-1092.jpg?w=740&t=st=1708543168~exp=1708543768~hmac=eecaf985b0e983c1724e1f8bd55eef7e12c36d07dc31a7e4faa93c6d7673b51d'
+            imageSrc='https://as1.ftcdn.net/v2/jpg/00/10/76/40/1000_F_10764007_L6YSkXqDwk9oQ7CgqNnBciIQkL1vC8CN.jpg'
             link='#'
           />
         </MovementTransition>
@@ -108,7 +84,7 @@ export default function App() {
           <Card
             title='Review Adversities'
             description='Identify struggles, triumphs, and critical life junctures.'
-            imageSrc='https://img.freepik.com/free-vector/online-world-concept-illustration_114360-1092.jpg?w=740&t=st=1708543168~exp=1708543768~hmac=eecaf985b0e983c1724e1f8bd55eef7e12c36d07dc31a7e4faa93c6d7673b51d'
+            imageSrc='https://as2.ftcdn.net/v2/jpg/05/00/14/05/1000_F_500140571_gdOTe5cuAKVVpy3F3Ma0LLnBeylDDoos.jpg'
             link='#'
           />
         </MovementTransition>
@@ -116,7 +92,7 @@ export default function App() {
           <Card
             title='Analyze Network'
             description='Assess professional affiliations, collaborations, and industry connections.'
-            imageSrc='https://img.freepik.com/free-vector/online-world-concept-illustration_114360-1092.jpg?w=740&t=st=1708543168~exp=1708543768~hmac=eecaf985b0e983c1724e1f8bd55eef7e12c36d07dc31a7e4faa93c6d7673b51d'
+            imageSrc='https://i.postimg.cc/C5KWBf3p/IMG-20240306-203121-589-transformed-jpeg.jpg'
             link='#'
           />
         </MovementTransition>
@@ -124,7 +100,7 @@ export default function App() {
           <Card
             title='Verify Legacies'
             description='Confirm philanthropic endeavors, legacies, and impact on world.'
-            imageSrc='https://img.freepik.com/free-vector/online-world-concept-illustration_114360-1092.jpg?w=740&t=st=1708543168~exp=1708543768~hmac=eecaf985b0e983c1724e1f8bd55eef7e12c36d07dc31a7e4faa93c6d7673b51d'
+            imageSrc='https://img.freepik.com/free-photo/handwritten-formulas-old-paper-ink-smudges-generative-ai_188544-53821.jpg?w=1060&t=st=1709745255~exp=1709745855~hmac=ce06558dcb9c2c220d67d01cb286cfee0d41aad88e3f2416615b74e3e8e01277'
             link='#'
           />
         </MovementTransition>
@@ -132,7 +108,7 @@ export default function App() {
           <Card
             title='Compile Narrative'
             description='Synthesize findings into a comprehensive, respectful memorial honoring their life story.'
-            imageSrc='https://img.freepik.com/free-vector/online-world-concept-illustration_114360-1092.jpg?w=740&t=st=1708543168~exp=1708543768~hmac=eecaf985b0e983c1724e1f8bd55eef7e12c36d07dc31a7e4faa93c6d7673b51d'
+            imageSrc='https://i.postimg.cc/rp753dVX/d-L9-OVHUg-VBdh9-HTq-Z2rnf-transformed.jpg'
             link='#'
           />
         </MovementTransition>

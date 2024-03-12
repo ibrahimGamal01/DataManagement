@@ -1,9 +1,8 @@
 import DataSc from '../assets/DataSc'
 
-export default function Section3() {
+export default function Section() {
   return (
-    <section className=''>
-      <div className='grid max-w-screen-xl px-4 py-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
+      <div className='grid max-w-screen-xl px-10 mt-15 py-4 mx-auto lg:gap- xl:gap-0 lg:py-16 lg:grid-cols-12'>
         {/* Image Section */}
         <div className='lg:hidden mb-8 lg:mb-0 lg:col-span-12 flex justify-center'>
           <DataSc className='w-full h-full object-cover' />
@@ -58,10 +57,9 @@ export default function Section3() {
         </div>
 
         {/* Image Section (Visible on Large Screens) */}
-        <div className='hidden lg:block lg:col-span-5 lg:flex justify-center'>
+        <div className='hidden lg:block lg:col-span-5 justify-center'>
           <DataSc className='w-full h-full object-cover' />
         </div>
       </div>
-    </section>
   );
 }

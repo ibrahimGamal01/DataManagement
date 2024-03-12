@@ -1,51 +1,61 @@
-import Card from "./components/Card";
 import Hero from "./components/Hero";
+import MeetUs from './components/MeetUs';
+import WhoFor from './components/WhoFor';
 import Section from "./components/Section3";
-import Footer from "./components/Footer";
+import CommnutiyCard from "./components/CommunityCard";
 import Pricing from "./components/Pricing";
+import Card from "./components/Card";
+import Footer from "./components/Footer";
+import BigCardContainer from "./components/blockCard";
 import RevealOnScroll from "./components/Transitions/RevealOnScroll";
-import ScaleTransition from "./components/Transitions/ScaleTransition";
+// import ScaleTransition from "./components/Transitions/ScaleTransition";
 import MovementTransition from "./components/Transitions/MovementTransition";
-import Timeline from "./components/Timeline";
+// import Timeline from "./components/Timeline";
 import MasterClass from "./components/MasterClass";
 
 
 
 export default function App() {
   return (
-    <div style={{ background: '#0f1114' }}>
+    <div style={{ background: '#0e0f11' }}>
       <Hero />
-      <div className="my-10 sm:my-25 md:mb-25">
-        <h1 className='max-w-2xl mt-10 sm:mt-20 mb-5 mx-auto text-2xl font-extrabold tracking-tight text-center text-blue-600 xl:text-4xl dark:text-black'>
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-100">
-            Short on time?
-          </span>
-        </h1>
-        <p className="text-center text-lg text-gray-500 mb-8">Enter your email to schedule a 10-minute meeting to get it done.</p>
-        <div className="flex justify-center">
-          <input type="email" name="email" placeholder="Enter your email" className="w-full max-w-md px-4 py-2 leading-tight text-gray-700 bg-white border border-gray-300 rounded-md appearance-none focus:outline-none focus:border-blue-500" required />
-          <button type="submit" className="ml-2 px-4 py-2 text-white font-bold bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-blue-700">Get it done</button>
-        </div>
+      <div className="mt-24 mb-24">
+        <MeetUs />
+      </div>
+      <div className="mt-28 mb-24">
+        <BigCardContainer
+          header={'NEXT GEN.'}
+          title1={'Pushing the Boundaries of Tech'}
+          text1={'Stay ahead of the curve with our cutting-edge technology solutions. TechTaleForge offers a range of services designed to elevate your digital presence and redefine your industry standards.'}
+          title2={'Innovative Solutions for Tomorrow'}
+          text2={'Embrace the future with confidence. Our Next Gen services empower businesses to thrive in the rapidly evolving tech landscape, ensuring sustainable growth and success.'}
+          svgVisible={true}
+        />
+      </div>
+      <div className="mt-28 mb-24">
+        <WhoFor />
+      </div>
+      <div className="mt-28 mb-24">
+        <BigCardContainer
+          header={'LEGACY'}
+          title1={'Preserve Your Digital Footprint'}
+          text1={'At TechTaleForge, we understand the importance of preserving legacies in the digital age. Our services encompass the meticulous curation and safeguarding of your digital presence, ensuring your impact endures for generations to come.'}
+          svgVisible={false}
+        />
+      </div>
+      <div className="mt-28 mb-24">
+        <RevealOnScroll>
+          <Section />
+        </RevealOnScroll>
       </div>
 
-
-
-
-      <RevealOnScroll>
-        <Section />
-      </RevealOnScroll>
-
-
-
-      <Timeline />
-
-      <MasterClass title='TechTaleForge' color="gray" />
-      <h1 className='max-w-2xl my-5 m-auto text-4xl font-extrabold tracking-tight justify-center text-center text-blue-600 xl:text-6xl dark:text-black sm:flex sm:items-center'>
+      <MasterClass title='MODULAR' color="gray" />
+      <h1 className='max-w-2xl my-5 m-auto text-3xl font-bold tracking-tight justify-center text-center text-blue-600 xl:text-5xl dark:text-black sm:flex sm:items-center'>
         <span className="bg-clip-text text-transparent text-center bg-gradient-to-r from-white to-gray-100">
           What to expect
         </span>
       </h1>
-      <p className="justify-center text-center text-lg text-gray-500 mb-8">We have </p>
+      <p className="text-center text-base mt-6 text-gray-500 mb-8 lg:mx-36 md:mx:36 sm:mx-16">We have split the task into a number of modules.</p>
 
       <div className='max-w-screen-xl mb-20 mx-auto px-4 md:py-4 py-10 sm:py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
         <MovementTransition>
@@ -114,13 +124,9 @@ export default function App() {
         </MovementTransition>
       </div>
 
+      <CommnutiyCard />
 
-
-
-
-      <ScaleTransition>
-        <Pricing />
-      </ScaleTransition>
+      <Pricing />
 
       <RevealOnScroll>
         <Footer />

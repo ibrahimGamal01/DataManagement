@@ -92,6 +92,7 @@
   
 //   export default Card;
 
+// eslint-disable-next-line react/prop-types
 const Card = ({ title, description, imageSrc, link }) => {
   return (
     <div className="relative flex flex-col mt-8 text-white bg-gray-700 shadow-md bg-clip-border rounded-xl w-96" style={{ background: '#181B20' }}>

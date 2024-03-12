@@ -2,18 +2,17 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const Masterclass = styled.div`
-  font-family: 'Lexend Zetta', sans-serif;
   background: radial-gradient(
     38.5% 50% at 50% 100%,
     rgba(9, 87, 165, 0.5) 0%,
     rgba(182, 209, 237, 0.1) 100%
   );
-  border-radius: 33px;
+  border-radius: 20px;
   flex: none;
   height: 32px;
   overflow: hidden;
   position: relative;
-  width: ${(props) => props.width || "200px"};;
+  width: ${(props) => props.width || "80px"};;
   margin: auto !important;
 `;
 
@@ -36,9 +35,7 @@ const H3 = styled.h1`
   color: ${(props) => props.color || "white"};
 `;
 
-// eslint-disable-next-line react/prop-types
-export default function MasterClass({ title, color }) {
-  // eslint-disable-next-line no-unused-vars
+export default function IconContainer({ title, color }) {
   const [text, setText] = useState(title);
 
   useEffect(() => {
@@ -57,9 +54,9 @@ export default function MasterClass({ title, color }) {
   return (
     <Masterclass>
       <RichTextContainer>
-        <H3 color={color}>
+        {/* <H3 color={color}>
           {text}
-        </H3>
+        </H3> */}
       </RichTextContainer>
     </Masterclass>
   );

@@ -85,14 +85,6 @@ function Pricing() {
                     className="text-gray-500 text-sm"> usd</span>
                 </p>
               </div>
-              {/* <div className='text-center flex flex-col gap-2 py-5 text-gray-200'>
-                <h2 className='text-xl font-bold '>Standard</h2>
-                <p>Best for multiple project handling</p>
-                <p>
-                  <span className='font-bold text-4xl'>$50</span>{" "}
-                  <span>/ Year</span>
-                </p>
-              </div> */}
               <ul className='px-2 py-5 flex flex-col gap-3'>
                 <li className='flex gap-2 items-center'>
                   <SVGTick />
@@ -160,6 +152,19 @@ function Pricing() {
                   </svg>
                 </span>
               </a>
+              <a
+                href='#'
+                style={{
+                  background:
+                    "radial-gradient(46.800000000000004% 40% at 50% 100%,#2b2f38 0%,#2b2f38 100%)",
+                }}
+                className='flex justify-center rounded-md mt-4 px-8 py-2 text-sm border border-gray-600
+                                          text-white focus-visible:outline focus-visible:outline-2 
+                                          focus-visible:outline-offset-2 focus-visible:outline-blue-200 transition ease-in-out delay-150 
+                                          hover:-translate-y-1 hover:text-white hover:bg-red-600 brightness-75 duration-300'
+              >
+                Price will go up as more modules are added.
+              </a>
             </BigCardContainer>
 
             {/* starter */}
@@ -213,7 +218,7 @@ function Pricing() {
                 href='#'
                 style={{
                   background:
-                    "radial-gradient(46.800000000000004% 40% at 50% 100%,#1b263f 0%,#1b263f 100%)",
+                    "radial-gradient(46.800000000000004% 40% at 50% 100%,#313c57 0%,#1b263f 100%)",
                   fontWeight: "bold",
                   fontSize: "1.1rem",
                   borderWidth: "1px",
@@ -280,7 +285,7 @@ function Pricing() {
                                           focus-visible:outline-offset-2 focus-visible:outline-blue-200 transition ease-in-out delay-150 
                                           hover:-translate-y-1 hover:text-white hover:bg-red-600 brightness-75 duration-300'
               >
-                Purchase
+                Pay Deposit
                 <span className='ml-1 font-bold hover:translate-x-1 hover:text-blue-500 transition-transform duration-300'>
                   <svg
                     id='Capa_1'

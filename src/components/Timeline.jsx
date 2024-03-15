@@ -52,7 +52,7 @@ const Timeline = () => {
                                         <p className="mb-3 text-base text-blue-600">1-6 May, 2021</p>
                                         <h4 className="mb-3 font-bold text-lg md:text-2xl">Registration</h4>
                                         <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                                            Pick your favourite event(s) and register in that event by filling the form corresponding to that event. It's that easy :)
+                                            Pick your favourite event(s) and register in that event by filling the form corresponding to that event. It{"'"}s that easy :)
                                         </p>
                                     </div>
                                 </div>

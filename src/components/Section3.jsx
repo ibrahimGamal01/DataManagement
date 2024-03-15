@@ -3,12 +3,10 @@ import DataSc from '../assets/DataSc'
 export default function Section() {
   return (
       <div className='grid max-w-screen-xl px-10 mt-15 py-4 mx-auto lg:gap- xl:gap-0 lg:py-16 lg:grid-cols-12'>
-        {/* Image Section */}
         <div className='lg:hidden mb-8 lg:mb-0 lg:col-span-12 flex justify-center'>
           <DataSc className='w-full h-full object-cover' />
         </div>
 
-        {/* Text Section */}
         <div className='lg:col-span-7'>
           <h1 className='max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white'>
             Software Tools for Data Management
@@ -53,10 +51,8 @@ export default function Section() {
           >
             Speak to Sales
           </a>
-
         </div>
 
-        {/* Image Section (Visible on Large Screens) */}
         <div className='hidden lg:block lg:col-span-5 justify-center'>
           <DataSc className='w-full h-full object-cover' />
         </div>

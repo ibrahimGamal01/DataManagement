@@ -48,7 +48,7 @@ const StyledSVG = styled.svg`
 // eslint-disable-next-line react/prop-types
 export default function VideoCreatorComponent({ header, title1, text1, title2, text2, svgVisible = true }) {
     return (
-        <BigCardContainer className="border-x-blue-600 border-xl border-gray-300 border-opacity-30">
+        <BigCardContainer className="border border-x-blue-600 border-y-gray-400 border-xl  border-opacity-30">
             {svgVisible && <StyledSVG
                 className="transform-origin-center-center snipcss-N6MtX"
                 style={{
@@ -91,49 +91,3 @@ export default function VideoCreatorComponent({ header, title1, text1, title2, t
         </BigCardContainer>
     );
 }
-
-
-
-
-{/* <svg
-                    className="transform-origin-center-center snipcss-N6MtX"
-                    style={{
-                        width: "100%",
-                        height: "100%",
-                        position: "absolute",
-                        inset: "0px",
-                        transformOrigin: "center center",
-                        willChange: "transform",
-                        transform: "rotate(18.4752deg)"
-                    }}
-                    viewBox="0 0 100 100"
-                    overflow="visible"
-                >
-                    <path
-                        id="curve-wnxkz4"
-                        d="M 0 50 L 0 50 A 1 1 0 0 1 100 50 L 100 50 L 100 50 A 1 1 0 0 1 0 50 L 0 50"
-                        strokeWidth="none"
-                        fill="transparent"
-                        style={{ display: "none" }}
-                    ></path>
-                    <text>
-                        <textPath
-                            href="#curve-wnxkz4"
-                            startOffset="0"
-                            dominantBaseline="hanging"
-                            id="style-NxGlk"
-                            className="style-NxGlk"
-                        >
-                            ✦ VIDEO CREATOR ✦ MASTERCLASS
-                        </textPath>
-                    </text> </svg> */}
-{/* <div className="">
-                    <svg className="" style={{ width: '100%', height: '100%', position: 'absolute', inset: '0px', transform: 'rotate(115.783deg)' }} viewBox="0 0 100 100" overflow="visible">
-                        <path id="" d="M 0 50 L 0 50 A 1 1 0 0 1 100 50 L 100 50 L 100 50 A 1 1 0 0 1 0 50 L 0 50" strokeWidth="none" fill="transparent" style={{ display: 'none' }} />
-                        <text className="">
-                            <textPath href="#curve-wnxkz4" startOffset="0" dominantBaseline="hanging" className="snipcss0-2-2-3 style-LzA3L" id="style-LzA3L">
-                                ✦ VIDEO CREATOR  ✦ MASTERCLASS
-                            </textPath>
-                        </text>
-                    </svg>
-                </div> */}

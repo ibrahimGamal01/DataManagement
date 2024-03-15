@@ -10,16 +10,17 @@ export default function WhoFor() {
 
             <div className="max-w-screen-xl mb-20 mx-auto px-10 md:py-4 py-10 sm:py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <div className="flex flex-col justify-start pr-12 text-base">
-                    <h3 className="text-xl font-medium text-gray-300 mb-4">Up your video quality</h3>
-                    <p className="text-base text-gray-400">If you feel like your video quality isn't up to scratch, this course will help you with that. You'll learn some key rules for getting the best and highest quality looking video.</p>
+                    <h3 className="text-xl font-medium text-gray-300 mb-4">Want to preserve a legacy</h3>
+                    <p className="text-base text-gray-400">Someone beloved to you passed out and they had a great life story that would change people{"'"}s lives</p>
                 </div>
                 <div className="flex flex-col justify-start pr-12 text-base">
-                    <h3 className="text-xl font-medium text-gray-300 mb-4">Make serious money</h3>
-                    <p className="text-base text-gray-400">Whether you want to make some extra side income or want to make hundreds of thousands, even millions, I share everything about how to make money from video.</p>
+                    <h3 className="text-xl font-medium text-gray-300 mb-4">You are Creating History</h3>
+                    <p className="text-base text-gray-400">You are Changing the world. Empowering the Youth. You are in face of Lots of corruption and people need to have a reliable source to know more about you</p>
                 </div>
                 <div className="flex flex-col justify-start pr-12 text-base">
-                    <h3 className="text-xl font-medium text-gray-300 mb-4">Status and recognition</h3>
-                    <p className="text-base text-gray-400">There's no doubt that building a brand also builds status and respect. Professional quality video can help you get the recognition, respect and status you deserve.</p>
+                    
+                    <h3 className="text-xl font-medium text-gray-300 mb-4">Status and Narrating</h3>
+                    <p className="text-base text-gray-400">You are Facing a Hard time narrating a life long story, Lots of Information, Too many sites and experiences. We will do it all for you adn have it in a Narrative</p>
                 </div>
             </div>
         </>

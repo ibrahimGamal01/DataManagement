@@ -14,7 +14,6 @@ import MovementTransition from "./components/Transitions/MovementTransition";
 import MasterClass from "./components/MasterClass";
 
 
-
 export default function App() {
   return (
     <div style={{ background: '#0e0f11' }}>
@@ -26,9 +25,9 @@ export default function App() {
         <BigCardContainer
           header={'NEXT GEN.'}
           title1={'Pushing the Boundaries of Tech'}
-          text1={'Stay ahead of the curve with our cutting-edge technology solutions. TechTaleForge offers a range of services designed to elevate your digital presence and redefine your industry standards.'}
-          title2={'Innovative Solutions for Tomorrow'}
-          text2={'Embrace the future with confidence. Our Next Gen services empower businesses to thrive in the rapidly evolving tech landscape, ensuring sustainable growth and success.'}
+          text1={'Stay ahead of the curve with our Product. TechTaleForge We will investigate, Search, Organize, narrate, and Preserve your digital footprint '}
+          title2={'Innovative Solutions to keep legacies Alive'}
+          text2={'Embrace the future with confidence. Our Next Gen services empower on creating a new history book, having your legacy preserved, No Political Strings to Affect our Narrative'}
           svgVisible={true}
         />
       </div>
@@ -57,7 +56,7 @@ export default function App() {
       </h1>
       <p className="text-center text-base mt-6 text-gray-500 mb-8 lg:mx-36 md:mx:36 sm:mx-16">We have split the task into a number of modules.</p>
 
-      <div className='max-w-screen-xl mb-20 mx-auto px-4 md:py-4 py-10 sm:py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+      <div className='max-w-screen-xl mb-20 mx-auto px-1 md:py-4 py-10 sm:py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-6'>
         <MovementTransition>
           <Card
             title='Gather Information'

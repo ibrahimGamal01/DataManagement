@@ -7,7 +7,8 @@ export default function Hero() {
                 id='up'
                 className='relative z-10 sm:h-3/5 md:h-3/5'
                 style={{
-                    backgroundImage: "url('https://assets.mixkit.co/videos/preview/mixkit-man-working-on-his-laptop-308-large.mp4')",
+                    // backgroundImage: "url('https://assets.mixkit.co/videos/preview/mixkit-man-working-on-his-laptop-308-large.mp4')",
+                    backgroundImage: "../assets/hero_intro.mp4",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
@@ -20,7 +21,8 @@ export default function Hero() {
                     className='absolute inset-0 w-full h-full object-cover -z-10'
                 >
                     <source
-                        src='https://assets.mixkit.co/videos/preview/mixkit-man-working-on-his-laptop-308-large.mp4'
+                        // src='https://assets.mixkit.co/videos/preview/mixkit-man-working-on-his-laptop-308-large.mp4'
+                        src='/src/assets/hero_intro.mp4'
                         type='video/mp4'
                     />
                     Your browser does not support the video tag.

@@ -1,8 +1,13 @@
 import MasterClass from "./MasterClass";
+import { motion } from 'framer-motion';
 
 export default function Hero() {
     return (
-        <>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+        >
             <header
                 id='up'
                 className='relative z-10 sm:h-3/5 md:h-3/5'
@@ -13,7 +18,7 @@ export default function Hero() {
                     backgroundPosition: "center",
                 }}
             >
-                <video
+                <motion.video
                     id='background-video'
                     autoPlay
                     loop
@@ -26,7 +31,7 @@ export default function Hero() {
                         type='video/mp4'
                     />
                     Your browser does not support the video tag.
-                </video>
+                </motion.video>
                 <div
                     className='h-screen bg-opacity-50 bg-black flex items-center justify-center'
                     style={{ background: "rgba(0,0,0,0.5)" }}
@@ -41,7 +46,11 @@ export default function Hero() {
                             <span className='text-white'> Keep legacies alive</span>
                         </p>
 
-                        <div className='mt-5 inline-flex items-center justify-center gap-x-6 '>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 1 }}
+                            className='mt-5 inline-flex items-center justify-center gap-x-6 '>
                             <a
                                 href='#'
                                 style={{
@@ -68,11 +77,11 @@ export default function Hero() {
                                     </svg>
                                 </span>
                             </a>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </header>7
-        </>
+        </motion.div>
     );
 }
 

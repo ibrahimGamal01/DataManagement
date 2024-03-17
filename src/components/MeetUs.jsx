@@ -1,6 +1,12 @@
+import { motion } from 'framer-motion';
+
 export default function MeetUs() {
     return (
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+        initial={{ y: 100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+         className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl mx-auto">
                 <h1 className="text-3xl font-extrabold tracking-tight text-center text-blue-600 xl:text-4xl dark:text-black">
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-100">
@@ -29,7 +35,7 @@ export default function MeetUs() {
                     </button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 
 }

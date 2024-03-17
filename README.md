@@ -10,7 +10,7 @@ Welcome to DMS.com, an elegant design for a Data Management Company. This projec
 
 ## Design
 
-![Design](Documentation/design.png)
+![Design](Documentation/screencapture.png)
 
 ## Getting Started
 

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
 const Masterclass = styled.div`
   font-family: 'Lexend Zetta', sans-serif;
@@ -55,12 +56,24 @@ export default function MasterClass({ title, color }) {
   }, []);
 
   return (
-    <Masterclass>
-      <RichTextContainer>
-        <H3 color={color}>
-          {text}
-        </H3>
-      </RichTextContainer>
-    </Masterclass>
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <Masterclass>
+          <RichTextContainer>
+            <H3 color={color}>
+              {text}
+            </H3>
+          </RichTextContainer>
+        </Masterclass>
+      </motion.div>
+
+    </>
+
+
   );
 }

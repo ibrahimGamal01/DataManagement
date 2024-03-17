@@ -1,7 +1,7 @@
 // eslint-disable-next-line react/prop-types
-const Card = ({ title, description, imageSrc}) => {
+const Card = ({ title, description, imageSrc }) => {
   return (
-    <div className="relative flex flex-col text-white bg-gray-700 shadow-md bg-clip-border rounded-xl w-96" style={{ background: '#181B20'}}>
+    <div className="relative flex flex-col text-white bg-gray-700 shadow-md bg-clip-border rounded-xl sm:w-96" style={{ background: '#181B20'}}>
       <div className="relative h-52 overflow-hidden text-white shadow-lg bg-clip-border rounded-t-xl bg-blue-gray-500 shadow-blue-gray-500/40">
         <img
           src={imageSrc}
@@ -18,5 +18,3 @@ const Card = ({ title, description, imageSrc}) => {
 };
 
 export default Card;
-
-  

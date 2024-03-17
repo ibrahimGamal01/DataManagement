@@ -23,7 +23,7 @@ export default function CommnutiyCard(){
                   </div>
                 </div>
               </div>
-              <div className="flex items-start gap-2.5 md:ml-36">
+              <div className="hidden lg:flex items-start gap-2.5 ml-36">
                 <div className="flex flex-row items-center rounded-lg shadow px-4" style={{ backgroundColor: '#202329' }}>
                   <img className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover" src="https://framerusercontent.com/images/7P9EM8xPuLdZTGsz17FsKYqHrk.jpg" alt="Jese image" />
                   <div className="flex-1 flex flex-col justify-center p-2 md:p-4">

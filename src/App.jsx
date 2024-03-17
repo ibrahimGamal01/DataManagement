@@ -50,7 +50,7 @@ export default function App() {
       </h1>
       <p className="text-center text-base mt-6 text-gray-500 mb-8 lg:mx-36 md:mx:36 sm:mx-16">We have split the task into a number of modules.</p>
 
-      <div className='max-w-screen-xl mb-20 mx-auto px-1 md:py-4 py-10 sm:py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-6'>
+      <div className="max-w-screen-xl mb-20 mx-auto px-1 md:py-4 py-10 sm:py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-y-6">
         < >
           <Card
             title='Gather Information'

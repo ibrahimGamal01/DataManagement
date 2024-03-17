@@ -8,7 +8,7 @@ const Footer = () => (
       <div className="flex justify-center items-center my-5">
         <a href="https://techtaleforge.com/" className="flex justify-center items-center rtl:space-x-reverse">
           <SVGComponent className="mr-3" />
-          <span className="text-2xl whitespace-nowrap dark:text-white transition duration-500 hover:text-indigo-500">TechTaleForge</span>
+          <span className="text-2xl whitespace-nowrap text-gray-200 transition duration-500 hover:text-indigo-500">TechTaleForge</span>
         </a>
       </div>
       {/* <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> */}

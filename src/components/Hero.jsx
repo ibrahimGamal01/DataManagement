@@ -18,11 +18,12 @@ export default function Hero() {
                     backgroundPosition: "center",
                 }}
             >
-                <motion.video
+                <video
                     id='background-video'
                     autoPlay
                     loop
                     muted
+                    playsInline
                     className='absolute inset-0 w-full h-full object-cover -z-10'
                 >
                     <source
@@ -31,7 +32,7 @@ export default function Hero() {
                         type='video/mp4'
                     />
                     Your browser does not support the video tag.
-                </motion.video>
+                </video>
                 <div
                     className='h-screen bg-opacity-50 bg-black flex items-center justify-center'
                     style={{ background: "rgba(0,0,0,0.5)" }}
